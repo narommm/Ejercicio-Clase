@@ -5,14 +5,19 @@
  */
 package ejeclase;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author María Lourdes
  */
 public class Aeropuerto {
-    private String ciudad,pais,id;
-    
-    public Aeropuerto(){}
+
+    private String ciudad, pais, id;
+    private ArrayList<Avion> avion;
+
+    public Aeropuerto() {
+    }
 
     public String getCiudad() {
         return ciudad;
@@ -38,6 +43,10 @@ public class Aeropuerto {
         this.id = id;
     }
 
-    
-    
+    public Avion agregar(Avion avion) {
+        return avion;
+    }
+
+    public void modificar(Aeropuerto aeropuerto) {
+    }
 }

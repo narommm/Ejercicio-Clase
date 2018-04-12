@@ -13,6 +13,7 @@ public class Ciclista {
     private String nombre;
     private String nacionalidad, fechaUnion;
     private int anioEstudio;
+    private Equipo equipo;
     
     public Ciclista(){}
 
@@ -47,6 +48,6 @@ public class Ciclista {
     public void setAnioEstudio(int anioEstudio) {
         this.anioEstudio = anioEstudio;
     }
-    
-    
+   
+    public void modificar(){}
 }

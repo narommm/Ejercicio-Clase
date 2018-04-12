@@ -5,16 +5,21 @@
  */
 package ejeclase;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author María Lourdes
  */
 public class Avion {
+
     private int horasDeV;
-    private String matricula,tipo;
+    private String matricula, tipo;
     private float capMaxima;
-    
-    public Avion(){}
+    private ArrayList<Vuelo> fecha;
+
+    public Avion() {
+    }
 
     public int getHorasDeV() {
         return horasDeV;
@@ -47,6 +52,11 @@ public class Avion {
     public void setCapMaxima(float capMaxima) {
         this.capMaxima = capMaxima;
     }
-    
-   
+
+    public Vuelo agregar(Vuelo fecha) {
+        return fecha;
+    }
+
+    public void mostrar() {
+    }
 }

@@ -5,15 +5,20 @@
  */
 package ejeclase;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author María Lourdes
  */
 public class Maestro {
+
     private String nombre, sexo, fechaNacim;
     private String codigo;
-    
-    public Maestro(){}
+    private ArrayList<Materia> materiaImpartida;
+
+    public Maestro() {
+    }
 
     public String getNombre() {
         return nombre;
@@ -46,6 +51,12 @@ public class Maestro {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-    
-    
+
+    public Maestro AgregarM(Maestro materiaImpartida) {
+        return materiaImpartida;
+    }
+
+    public void mostrar() {
+    }
+
 }

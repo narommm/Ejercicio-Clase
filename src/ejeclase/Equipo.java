@@ -4,17 +4,22 @@
  * and open the template in the editor.
  */
 package ejeclase;
+
 import java.util.ArrayList;
+
 /**
  *
  * @author María Lourdes
  */
 public class Equipo {
-    private String capitan,nombre;
+
+    private String capitan, nombre, calificacionFinal;
     private float km;
     private ArrayList<String> pruebas;
-    
-    public Equipo(){}
+    private ArrayList<Ciclista> integrante;
+
+    public Equipo() {
+    }
 
     public String getCapitan() {
         return capitan;
@@ -32,6 +37,14 @@ public class Equipo {
         this.nombre = nombre;
     }
 
+    public String getCalificacionFinal() {
+        return calificacionFinal;
+    }
+
+    public void setCalificacionFinal(String calificacionFinal) {
+        this.calificacionFinal = calificacionFinal;
+    }
+
     public float getKm() {
         return km;
     }
@@ -47,5 +60,15 @@ public class Equipo {
     public void setPruebas(ArrayList<String> pruebas) {
         this.pruebas = pruebas;
     }
-    
+
+    public Ciclista Agregar(Ciclista integrante) {
+        return integrante;
+    }
+
+    public void modificar() {
+    }
+
+    public void mostrarEquipo() {
+    }
+
 }

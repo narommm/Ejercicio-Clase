@@ -5,14 +5,19 @@
  */
 package ejeclase;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author María Lourdes
  */
 public class Alumno {
-    private String grado, sexo,fechaNac, nombre;
-    
-    public Alumno(){}
+
+    private String grado, sexo, fechaNac, nombre;
+    private ArrayList<Materia> materiaRecibida;
+
+    public Alumno() {
+    }
 
     public String getGrado() {
         return grado;
@@ -45,6 +50,12 @@ public class Alumno {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    
+
+    public Materia Agregar(Materia materiaRecibida) {
+        return materiaRecibida;
+    }
+
+    public void Mostrar() {
+    }
+
 }
